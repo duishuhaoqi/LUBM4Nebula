@@ -3,7 +3,7 @@ description: lubm
 removeTempFiles: false
 clientSettings:
   retry: 3
-  concurrency: 12 # number of graph clients
+  concurrency: 12 _ number of graph clients
   channelBufferSize: 1
   space: lubm
   connection:
@@ -16,33 +16,33 @@ clientSettings:
       USE lubm;
       CREATE TAG IF NOT EXISTS UNTYPED(uri string);
       CREATE TAG IF NOT EXISTS owl_Ontology(uri string);
-      CREATE TAG IF NOT EXISTS univ-bench.owl#University(uri string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name string);
-      CREATE TAG IF NOT EXISTS univ-bench.owl#Department(uri string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name string);
-      CREATE TAG IF NOT EXISTS univ-bench.owl#FullProfessor(uri string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#researchInterest string);
-      CREATE TAG IF NOT EXISTS univ-bench.owl#AssociateProfessor(uri string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#researchInterest string);
-      CREATE TAG IF NOT EXISTS univ-bench.owl#AssistantProfessor(uri string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#researchInterest string);
-      CREATE TAG IF NOT EXISTS univ-bench.owl#Lecturer(uri string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone string);
-      CREATE TAG IF NOT EXISTS univ-bench.owl#UndergraduateStudent(uri string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone string);
-      CREATE TAG IF NOT EXISTS univ-bench.owl#GraduateStudent(uri string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone string);
-      CREATE TAG IF NOT EXISTS univ-bench.owl#ResearchGroup(uri string);
-      CREATE TAG IF NOT EXISTS univ-bench.owl#Publication(uri string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name string);
-      CREATE TAG IF NOT EXISTS univ-bench.owl#Course(uri string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name string);
-      CREATE TAG IF NOT EXISTS univ-bench.owl#GraduateCourse(uri string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name string);
-      CREATE TAG IF NOT EXISTS univ-bench.owl#TeachingAssistant(uri string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone string);
-      CREATE TAG IF NOT EXISTS univ-bench.owl#ResearchAssistant(uri string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone string);
+      CREATE TAG IF NOT EXISTS unive_bench_ow_University(uri string,unive_bench_ow_name string);
+      CREATE TAG IF NOT EXISTS unive_bench_ow_Department(uri string,unive_bench_ow_name string);
+      CREATE TAG IF NOT EXISTS unive_bench_ow_FullProfessor(uri string,unive_bench_ow_name string,unive_bench_ow_emailAddress string,unive_bench_ow_telephone string,unive_bench_ow_researchInterest string);
+      CREATE TAG IF NOT EXISTS unive_bench_ow_AssociateProfessor(uri string,unive_bench_ow_name string,unive_bench_ow_emailAddress string,unive_bench_ow_telephone string,unive_bench_ow_researchInterest string);
+      CREATE TAG IF NOT EXISTS unive_bench_ow_AssistantProfessor(uri string,unive_bench_ow_name string,unive_bench_ow_emailAddress string,unive_bench_ow_telephone string,unive_bench_ow_researchInterest string);
+      CREATE TAG IF NOT EXISTS unive_bench_ow_Lecturer(uri string,unive_bench_ow_name string,unive_bench_ow_emailAddress string,unive_bench_ow_telephone string);
+      CREATE TAG IF NOT EXISTS unive_bench_ow_UndergraduateStudent(uri string,unive_bench_ow_name string,unive_bench_ow_emailAddress string,unive_bench_ow_telephone string);
+      CREATE TAG IF NOT EXISTS unive_bench_ow_GraduateStudent(uri string,unive_bench_ow_name string,unive_bench_ow_emailAddress string,unive_bench_ow_telephone string);
+      CREATE TAG IF NOT EXISTS unive_bench_ow_ResearchGroup(uri string);
+      CREATE TAG IF NOT EXISTS unive_bench_ow_Publication(uri string,unive_bench_ow_name string);
+      CREATE TAG IF NOT EXISTS unive_bench_ow_Course(uri string,unive_bench_ow_name string);
+      CREATE TAG IF NOT EXISTS unive_bench_ow_GraduateCourse(uri string,unive_bench_ow_name string);
+      CREATE TAG IF NOT EXISTS unive_bench_ow_TeachingAssistant(uri string,unive_bench_ow_name string,unive_bench_ow_emailAddress string,unive_bench_ow_telephone string);
+      CREATE TAG IF NOT EXISTS unive_bench_ow_ResearchAssistant(uri string,unive_bench_ow_name string,unive_bench_ow_emailAddress string,unive_bench_ow_telephone string);
       CREATE EDGE IF NOT EXISTS owl_imports();
-      CREATE EDGE IF NOT EXISTS univ_bench.owl_subOrganizationOf();
-      CREATE EDGE IF NOT EXISTS univ_bench.owl_teacherOf();
-      CREATE EDGE IF NOT EXISTS univ_bench.owl_undergraduateDegreeFrom();
-      CREATE EDGE IF NOT EXISTS univ_bench.owl_mastersDegreeFrom();
-      CREATE EDGE IF NOT EXISTS univ_bench.owl_doctoralDegreeFrom();
-      CREATE EDGE IF NOT EXISTS univ_bench.owl_worksFor();
-      CREATE EDGE IF NOT EXISTS univ_bench.owl_headOf();
-      CREATE EDGE IF NOT EXISTS univ_bench.owl_memberOf();
-      CREATE EDGE IF NOT EXISTS univ_bench.owl_takesCourse();
-      CREATE EDGE IF NOT EXISTS univ_bench.owl_advisor();
-      CREATE EDGE IF NOT EXISTS univ_bench.owl_publicationAuthor();
-      CREATE EDGE IF NOT EXISTS univ_bench.owl_teachingAssistantOf();
+      CREATE EDGE IF NOT EXISTS univ_bench_owl_subOrganizationOf();
+      CREATE EDGE IF NOT EXISTS univ_bench_owl_teacherOf();
+      CREATE EDGE IF NOT EXISTS univ_bench_owl_undergraduateDegreeFrom();
+      CREATE EDGE IF NOT EXISTS univ_bench_owl_mastersDegreeFrom();
+      CREATE EDGE IF NOT EXISTS univ_bench_owl_doctoralDegreeFrom();
+      CREATE EDGE IF NOT EXISTS univ_bench_owl_worksFor();
+      CREATE EDGE IF NOT EXISTS univ_bench_owl_headOf();
+      CREATE EDGE IF NOT EXISTS univ_bench_owl_memberOf();
+      CREATE EDGE IF NOT EXISTS univ_bench_owl_takesCourse();
+      CREATE EDGE IF NOT EXISTS univ_bench_owl_advisor();
+      CREATE EDGE IF NOT EXISTS univ_bench_owl_publicationAuthor();
+      CREATE EDGE IF NOT EXISTS univ_bench_owl_teachingAssistantOf();
     afterPeriod: 8s
 logPath: ./err/test.log
 files:
@@ -82,14 +82,14 @@ files:
           index: 0
           type: int
         tags:
-          - name: owl#Ontology
+          - name: owl_Ontology
             props:
               - name: uri
                 type: string
                 index: 1
 
-  - path: /home/syy/Project/LUBM/vertex/univ_bench.owl_University.csv
-    failDataPath: ./err/data/univ_bench.owl_University.csv
+  - path: /home/syy/Project/LUBM/vertex/univ_bench_owl_University.csv
+    failDataPath: ./err/data/univ_bench_owl_University.csv
     batchSize: 100
     type: csv
     csv:
@@ -103,17 +103,17 @@ files:
           index: 0
           type: int
         tags:
-          - name: univ-bench.owl#University
+          - name: unive_bench_ow_University
             props:
               - name: uri
                 type: string
                 index: 1
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name
+              - name: unive_bench_ow_name
                 type: string
                 ndex: 2
 
-  - path: /home/syy/Project/LUBM/vertex/univ_bench.owl_Department.csv
-    failDataPath: ./err/data/univ_bench.owl_Department.csv
+  - path: /home/syy/Project/LUBM/vertex/univ_bench_owl_Department.csv
+    failDataPath: ./err/data/univ_bench_owl_Department.csv
     batchSize: 100
     type: csv
     csv:
@@ -127,17 +127,17 @@ files:
           index: 0
           type: int
         tags:
-          - name: univ-bench.owl#Department
+          - name: unive_bench_ow_Department
             props:
               - name: uri
                 type: string
                 index: 1
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name
+              - name: unive_bench_ow_name
                 type: string
                 index: 2
 
-  - path: /home/syy/Project/LUBM/vertex/univ_bench.owl_FullProfessor.csv
-    failDataPath: ./err/data/univ_bench.owl_FullProfessor.csv
+  - path: /home/syy/Project/LUBM/vertex/univ_bench_owl_FullProfessor.csv
+    failDataPath: ./err/data/univ_bench_owl_FullProfessor.csv
     batchSize: 100
     type: csv
     csv:
@@ -151,26 +151,26 @@ files:
           index: 0
           type: int
         tags:
-          - name: univ-bench.owl#FullProfessor
+          - name: unive_bench_ow_FullProfessor
             props:
               - name: uri
                 type: string
                 index: 1
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name
+              - name: unive_bench_ow_name
                 type: string
                 index: 2
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress
+              - name: unive_bench_ow_emailAddress
                 type: string
                 index: 3
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone
+              - name: unive_bench_ow_telephone
                 type: string
                 index: 4
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#researchInterest
+              - name: unive_bench_ow_researchInterest
                 type: string
                 index: 5
 
-  - path: /home/syy/Project/LUBM/vertex/univ_bench.owl_AssociateProfessor.csv
-    failDataPath: ./err/data/univ_bench.owl_AssociateProfessor.csv
+  - path: /home/syy/Project/LUBM/vertex/univ_bench_owl_AssociateProfessor.csv
+    failDataPath: ./err/data/univ_bench_owl_AssociateProfessor.csv
     batchSize: 100
     type: csv
     csv:
@@ -184,26 +184,26 @@ files:
           index: 0
           type: int
         tags:
-          - name: univ-bench.owl#AssociateProfessor
+          - name: unive_bench_ow_AssociateProfessor
             props:
               - name: uri
                 type: string
                 index: 1
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name
+              - name: unive_bench_ow_name
                 type: string
                 index: 2
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress
+              - name: unive_bench_ow_emailAddress
                 type: string
                 index: 3
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone
+              - name: unive_bench_ow_telephone
                 type: string
                 index: 4
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#researchInterest
+              - name: unive_bench_ow_researchInterest
                 type: string
                 index: 5
 
-  - path: /home/syy/Project/LUBM/vertex/univ_bench.owl_AssistantProfessor.csv
-    failDataPath: ./err/data/univ_bench.owl_AssistantProfessor.csv
+  - path: /home/syy/Project/LUBM/vertex/univ_bench_owl_AssistantProfessor.csv
+    failDataPath: ./err/data/univ_bench_owl_AssistantProfessor.csv
     batchSize: 100
     type: csv
     csv:
@@ -217,26 +217,26 @@ files:
           index: 0
           type: int
         tags:
-          - name: univ-bench.owl#AssistantProfessor
+          - name: unive_bench_ow_AssistantProfessor
             props:
               - name: uri
                 type: string
                 index: 1
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name
+              - name: unive_bench_ow_name
                 type: string
                 index: 2
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress
+              - name: unive_bench_ow_emailAddress
                 type: string
                 index: 3
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone
+              - name: unive_bench_ow_telephone
                 type: string
                 index: 4
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#researchInterest
+              - name: unive_bench_ow_researchInterest
                 type: string
                 index: 5
 
-  - path: /home/syy/Project/LUBM/vertex/univ_bench.owl_Lecturer.csv
-    failDataPath: ./err/data/univ_bench.owl_Lecturer.csv
+  - path: /home/syy/Project/LUBM/vertex/univ_bench_owl_Lecturer.csv
+    failDataPath: ./err/data/univ_bench_owl_Lecturer.csv
     batchSize: 100
     type: csv
     csv:
@@ -250,23 +250,23 @@ files:
           index: 0
           type: int
         tags:
-          - name: univ-bench.owl#Lecturer
+          - name: unive_bench_ow_Lecturer
             props:
               - name: uri
                 type: string
                 index: 1
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name
+              - name: unive_bench_ow_name
                 type: string
                 index: 2
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress
+              - name: unive_bench_ow_emailAddress
                 type: string
                 index: 3
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone
+              - name: unive_bench_ow_telephone
                 type: string
                 index: 4
 
-  - path: /home/syy/Project/LUBM/vertex/univ_bench.owl_UndergraduateStudent.csv
-    failDataPath: ./err/data/univ_bench.owl_UndergraduateStudent.csv
+  - path: /home/syy/Project/LUBM/vertex/univ_bench_owl_UndergraduateStudent.csv
+    failDataPath: ./err/data/univ_bench_owl_UndergraduateStudent.csv
     batchSize: 100
     type: csv
     csv:
@@ -280,23 +280,23 @@ files:
           index: 0
           type: int
         tags:
-          - name: univ-bench.owl#UndergraduateStudent
+          - name: unive_bench_ow_UndergraduateStudent
             props:
               - name: uri
                 type: string
                 index: 1
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name
+              - name: unive_bench_ow_name
                 type: string
                 index: 2
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress
+              - name: unive_bench_ow_emailAddress
                 type: string
                 index: 3
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone
+              - name: unive_bench_ow_telephone
                 type: string
                 index: 4
 
-  - path: /home/syy/Project/LUBM/vertex/univ_bench.owl_GraduateStudent.csv
-    failDataPath: ./err/data/univ_bench.owl_GraduateStudent.csv
+  - path: /home/syy/Project/LUBM/vertex/univ_bench_owl_GraduateStudent.csv
+    failDataPath: ./err/data/univ_bench_owl_GraduateStudent.csv
     batchSize: 100
     type: csv
     csv:
@@ -310,23 +310,23 @@ files:
           index: 0
           type: int
         tags:
-          - name: univ-bench.owl#GraduateStudent
+          - name: unive_bench_ow_GraduateStudent
             props:
               - name: uri
                 type: string
                 index: 1
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name
+              - name: unive_bench_ow_name
                 type: string
                 index: 2
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress
+              - name: unive_bench_ow_emailAddress
                 type: string
                 index: 3
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone
+              - name: unive_bench_ow_telephone
                 type: string
                 index: 4
 
-  - path: /home/syy/Project/LUBM/vertex/univ_bench.owl_ResearchGroup.csv
-    failDataPath: ./err/data/univ_bench.owl_ResearchGroup.csv
+  - path: /home/syy/Project/LUBM/vertex/univ_bench_owl_ResearchGroup.csv
+    failDataPath: ./err/data/univ_bench_owl_ResearchGroup.csv
     batchSize: 100
     type: csv
     csv:
@@ -340,14 +340,14 @@ files:
           index: 0
           type: int
         tags:
-          - name: univ-bench.owl#ResearchGroup
+          - name: unive_bench_ow_ResearchGroup
             props:
               - name: uri
                 type: string
                 index: 1
 
-  - path: /home/syy/Project/LUBM/vertex/univ_bench.owl_Publication.csv
-    failDataPath: ./err/data/univ_bench.owl_Publication.csv
+  - path: /home/syy/Project/LUBM/vertex/univ_bench_owl_Publication.csv
+    failDataPath: ./err/data/univ_bench_owl_Publication.csv
     batchSize: 100
     type: csv
     csv:
@@ -361,17 +361,17 @@ files:
           index: 0
           type: int
         tags:
-          - name: univ-bench.owl#Publication
+          - name: unive_bench_ow_Publication
             props:
               - name: uri
                 type: string
                 index: 1
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name
+              - name: unive_bench_ow_name
                 type: string
                 index: 2
 
-  - path: /home/syy/Project/LUBM/vertex/univ_bench.owl_Course.csv
-    failDataPath: ./err/data/univ_bench.owl_Course.csv
+  - path: /home/syy/Project/LUBM/vertex/univ_bench_owl_Course.csv
+    failDataPath: ./err/data/univ_bench_owl_Course.csv
     batchSize: 100
     type: csv
     csv:
@@ -385,17 +385,17 @@ files:
           index: 0
           type: int
         tags:
-          - name: univ-bench.owl#Course
+          - name: unive_bench_ow_Course
             props:
               - name: uri
                 type: string
                 index: 1
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name
+              - name: unive_bench_ow_name
                 type: string
                 index: 2
 
-  - path: /home/syy/Project/LUBM/vertex/univ_bench.owl_GraduateCourse.csv
-    failDataPath: ./err/data/univ_bench.owl_GraduateCourse.csv
+  - path: /home/syy/Project/LUBM/vertex/univ_bench_owl_GraduateCourse.csv
+    failDataPath: ./err/data/univ_bench_owl_GraduateCourse.csv
     batchSize: 100
     type: csv
     csv:
@@ -409,17 +409,17 @@ files:
           index: 0
           type: int
         tags:
-          - name: univ-bench.owl#GraduateCourse
+          - name: unive_bench_ow_GraduateCourse
             props:
               - name: uri
                 type: string
                 index: 1
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name
+              - name: unive_bench_ow_name
                 type: string
                 index: 2
 
-  - path: /home/syy/Project/LUBM/vertex/univ_bench.owl_TeachingAssistant.csv
-    failDataPath: ./err/data/univ_bench.owl_TeachingAssistant.csv
+  - path: /home/syy/Project/LUBM/vertex/univ_bench_owl_TeachingAssistant.csv
+    failDataPath: ./err/data/univ_bench_owl_TeachingAssistant.csv
     batchSize: 100
     type: csv
     csv:
@@ -433,23 +433,23 @@ files:
           index: 0
           type: int
         tags:
-          - name: univ-bench.owl#TeachingAssistant
+          - name: unive_bench_ow_TeachingAssistant
             props:
               - name: uri
                 type: string
                 index: 1
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name
+              - name: unive_bench_ow_name
                 type: string
                 index: 2
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress
+              - name: unive_bench_ow_emailAddress
                 type: string
                 index: 3
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone
+              - name: unive_bench_ow_telephone
                 type: string
                 index: 4
 
-  - path: /home/syy/Project/LUBM/vertex/univ_bench.owl_ResearchAssistant.csv
-    failDataPath: ./err/data/univ_bench.owl_ResearchAssistant.csv
+  - path: /home/syy/Project/LUBM/vertex/univ_bench_owl_ResearchAssistant.csv
+    failDataPath: ./err/data/univ_bench_owl_ResearchAssistant.csv
     batchSize: 100
     type: csv
     csv:
@@ -463,18 +463,18 @@ files:
           index: 0
           type: int
         tags:
-          - name: univ-bench.owl#ResearchAssistant
+          - name: unive_bench_ow_ResearchAssistant
             props:
               - name: uri
                 type: string
                 index: 1
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name
+              - name: unive_bench_ow_name
                 type: string
                 index: 2
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress
+              - name: unive_bench_ow_emailAddress
                 type: string
                 index: 3
-              - name: http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone
+              - name: unive_bench_ow_telephone
                 type: string
                 index: 4
 
@@ -498,8 +498,8 @@ files:
           index: 1
           type: int
 
-  - path: /home/syy/Project/LUBM/edge/univ_bench.owl_subOrganizationOf.csv
-    failDataPath: ./err/data/univ_bench.owl_subOrganizationOf.csv
+  - path: /home/syy/Project/LUBM/edge/univ_bench_owl_subOrganizationOf.csv
+    failDataPath: ./err/data/univ_bench_owl_subOrganizationOf.csv
     batchSize: 100
     type: csv
     csv:
@@ -509,7 +509,7 @@ files:
     schema:
       type: edge
       edge:
-        name: univ_bench.owl_subOrganizationOf
+        name: univ_bench_owl_subOrganizationOf
         withRanking: false
         srcVID:
           index: 0
@@ -518,8 +518,8 @@ files:
           index: 1
           type: int
 
-  - path: /home/syy/Project/LUBM/edge/univ_bench.owl_teacherOf.csv
-    failDataPath: ./err/data/univ_bench.owl_teacherOf.csv
+  - path: /home/syy/Project/LUBM/edge/univ_bench_owl_teacherOf.csv
+    failDataPath: ./err/data/univ_bench_owl_teacherOf.csv
     batchSize: 100
     type: csv
     csv:
@@ -529,7 +529,7 @@ files:
     schema:
       type: edge
       edge:
-        name: univ_bench.owl_teacherOf
+        name: univ_bench_owl_teacherOf
         withRanking: false
         srcVID:
           index: 0
@@ -538,8 +538,8 @@ files:
           index: 1
           type: int
 
-  - path: /home/syy/Project/LUBM/edge/univ_bench.owl_undergraduateDegreeFrom.csv
-    failDataPath: ./err/data/univ_bench.owl_undergraduateDegreeFrom.csv
+  - path: /home/syy/Project/LUBM/edge/univ_bench_owl_undergraduateDegreeFrom.csv
+    failDataPath: ./err/data/univ_bench_owl_undergraduateDegreeFrom.csv
     batchSize: 100
     type: csv
     csv:
@@ -549,7 +549,7 @@ files:
     schema:
       type: edge
       edge:
-        name: univ_bench.owl_undergraduateDegreeFrom
+        name: univ_bench_owl_undergraduateDegreeFrom
         withRanking: false
         srcVID:
           index: 0
@@ -558,8 +558,8 @@ files:
           index: 1
           type: int
 
-  - path: /home/syy/Project/LUBM/edge/univ_bench.owl_mastersDegreeFrom.csv
-    failDataPath: ./err/data/univ_bench.owl_mastersDegreeFrom.csv
+  - path: /home/syy/Project/LUBM/edge/univ_bench_owl_mastersDegreeFrom.csv
+    failDataPath: ./err/data/univ_bench_owl_mastersDegreeFrom.csv
     batchSize: 100
     type: csv
     csv:
@@ -569,7 +569,7 @@ files:
     schema:
       type: edge
       edge:
-        name: univ_bench.owl_mastersDegreeFrom
+        name: univ_bench_owl_mastersDegreeFrom
         withRanking: false
         srcVID:
           index: 0
@@ -578,8 +578,8 @@ files:
           index: 1
           type: int
 
-  - path: /home/syy/Project/LUBM/edge/univ_bench.owl_doctoralDegreeFrom.csv
-    failDataPath: ./err/data/univ_bench.owl_doctoralDegreeFrom.csv
+  - path: /home/syy/Project/LUBM/edge/univ_bench_owl_doctoralDegreeFrom.csv
+    failDataPath: ./err/data/univ_bench_owl_doctoralDegreeFrom.csv
     batchSize: 100
     type: csv
     csv:
@@ -589,7 +589,7 @@ files:
     schema:
       type: edge
       edge:
-        name: univ_bench.owl_doctoralDegreeFrom
+        name: univ_bench_owl_doctoralDegreeFrom
         withRanking: false
         srcVID:
           index: 0
@@ -598,8 +598,8 @@ files:
           index: 1
           type: int
 
-  - path: /home/syy/Project/LUBM/edge/univ_bench.owl_worksFor.csv
-    failDataPath: ./err/data/univ_bench.owl_worksFor.csv
+  - path: /home/syy/Project/LUBM/edge/univ_bench_owl_worksFor.csv
+    failDataPath: ./err/data/univ_bench_owl_worksFor.csv
     batchSize: 100
     type: csv
     csv:
@@ -609,7 +609,7 @@ files:
     schema:
       type: edge
       edge:
-        name: univ_bench.owl_worksFor
+        name: univ_bench_owl_worksFor
         withRanking: false
         srcVID:
           index: 0
@@ -618,8 +618,8 @@ files:
           index: 1
           type: int
 
-  - path: /home/syy/Project/LUBM/edge/univ_bench.owl_headOf.csv
-    failDataPath: ./err/data/univ_bench.owl_headOf.csv
+  - path: /home/syy/Project/LUBM/edge/univ_bench_owl_headOf.csv
+    failDataPath: ./err/data/univ_bench_owl_headOf.csv
     batchSize: 100
     type: csv
     csv:
@@ -629,7 +629,7 @@ files:
     schema:
       type: edge
       edge:
-        name: univ_bench.owl_headOf
+        name: univ_bench_owl_headOf
         withRanking: false
         srcVID:
           index: 0
@@ -638,8 +638,8 @@ files:
           index: 1
           type: int
 
-  - path: /home/syy/Project/LUBM/edge/univ_bench.owl_memberOf.csv
-    failDataPath: ./err/data/univ_bench.owl_memberOf.csv
+  - path: /home/syy/Project/LUBM/edge/univ_bench_owl_memberOf.csv
+    failDataPath: ./err/data/univ_bench_owl_memberOf.csv
     batchSize: 100
     type: csv
     csv:
@@ -649,7 +649,7 @@ files:
     schema:
       type: edge
       edge:
-        name: univ_bench.owl_memberOf
+        name: univ_bench_owl_memberOf
         withRanking: false
         srcVID:
           index: 0
@@ -658,8 +658,8 @@ files:
           index: 1
           type: int
 
-  - path: /home/syy/Project/LUBM/edge/univ_bench.owl_takesCourse.csv
-    failDataPath: ./err/data/univ_bench.owl_takesCourse.csv
+  - path: /home/syy/Project/LUBM/edge/univ_bench_owl_takesCourse.csv
+    failDataPath: ./err/data/univ_bench_owl_takesCourse.csv
     batchSize: 100
     type: csv
     csv:
@@ -669,7 +669,7 @@ files:
     schema:
       type: edge
       edge:
-        name: univ_bench.owl_takesCourse
+        name: univ_bench_owl_takesCourse
         withRanking: false
         srcVID:
           index: 0
@@ -678,8 +678,8 @@ files:
           index: 1
           type: int
 
-  - path: /home/syy/Project/LUBM/edge/univ_bench.owl_advisor.csv
-    failDataPath: ./err/data/univ_bench.owl_advisor.csv
+  - path: /home/syy/Project/LUBM/edge/univ_bench_owl_advisor.csv
+    failDataPath: ./err/data/univ_bench_owl_advisor.csv
     batchSize: 100
     type: csv
     csv:
@@ -689,7 +689,7 @@ files:
     schema:
       type: edge
       edge:
-        name: univ_bench.owl_advisor
+        name: univ_bench_owl_advisor
         withRanking: false
         srcVID:
           index: 0
@@ -698,8 +698,8 @@ files:
           index: 1
           type: int
 
-  - path: /home/syy/Project/LUBM/edge/univ_bench.owl_publicationAuthor.csv
-    failDataPath: ./err/data/univ_bench.owl_publicationAuthor.csv
+  - path: /home/syy/Project/LUBM/edge/univ_bench_owl_publicationAuthor.csv
+    failDataPath: ./err/data/univ_bench_owl_publicationAuthor.csv
     batchSize: 100
     type: csv
     csv:
@@ -709,7 +709,7 @@ files:
     schema:
       type: edge
       edge:
-        name: univ_bench.owl_publicationAuthor
+        name: univ_bench_owl_publicationAuthor
         withRanking: false
         srcVID:
           index: 0
@@ -718,8 +718,8 @@ files:
           index: 1
           type: int
 
-  - path: /home/syy/Project/LUBM/edge/univ_bench.owl_teachingAssistantOf.csv
-    failDataPath: ./err/data/univ_bench.owl_teachingAssistantOf.csv
+  - path: /home/syy/Project/LUBM/edge/univ_bench_owl_teachingAssistantOf.csv
+    failDataPath: ./err/data/univ_bench_owl_teachingAssistantOf.csv
     batchSize: 100
     type: csv
     csv:
@@ -729,7 +729,7 @@ files:
     schema:
       type: edge
       edge:
-        name: univ_bench.owl_teachingAssistantOf
+        name: univ_bench_owl_teachingAssistantOf
         withRanking: false
         srcVID:
           index: 0
