@@ -15,7 +15,7 @@ clientSettings:
       CREATE SPACE IF NOT EXISTS lubm(PARTITION_NUM = 5, REPLICA_FACTOR = 1, vid_type = int64);
       USE lubm;
       CREATE TAG IF NOT EXISTS UNTYPED(uri string);
-      CREATE TAG IF NOT EXISTS owl#Ontology(uri string);
+      CREATE TAG IF NOT EXISTS owl_Ontology(uri string);
       CREATE TAG IF NOT EXISTS univ-bench.owl#University(uri string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name string);
       CREATE TAG IF NOT EXISTS univ-bench.owl#Department(uri string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name string);
       CREATE TAG IF NOT EXISTS univ-bench.owl#FullProfessor(uri string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#name string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#emailAddress string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#telephone string,http://www.lehigh.edu/~zhp2/2004/0401/univ-bench.owl#researchInterest string);
