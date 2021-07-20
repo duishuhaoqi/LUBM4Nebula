@@ -231,6 +231,9 @@ for entityIns in entityTypeTables:  # 输出所有节点类型的type表
         if ('-' in vertexTableName):
             vertexTableName = vertexTableName.replace('-', '_', 20)
 
+        # if ('.' in vertexTableName):
+        #     vertexTableName = vertexTableName.replace('.', '_', 20)
+
         # label2id
         flag = vertexTableName not in label2id
         if flag == True:
